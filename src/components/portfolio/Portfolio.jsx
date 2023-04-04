@@ -7,7 +7,7 @@ const data = [
     id: 1,
     image: IMG1,
     title: "Personal Portfolio",
-    github: "https://github.com",
+    github: "https://github.com/Shrutihere/personal-portfolio-vercel",
     demo: "https://dribble.com/Alien_pixels"
   },
   {
