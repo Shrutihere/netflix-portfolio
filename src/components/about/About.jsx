@@ -42,7 +42,7 @@ const About = () => {
 
           <p>
           I am a self-motivated and ambitious individual, having a practical approach towards problem solving. I
-am currently in my fourth year of studying B. Tech in Computer Science seeking a position in the software industry
+am proficient in Python programming and Backend Development, seeking a position in the software industry
 where I can use my knowledge and skillset in developing applications and learn new technologies.
           </p>
 
