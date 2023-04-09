@@ -16,6 +16,14 @@ const Experience = () => {
             <article className='experience__details'>
               < BsPatchCheckFill className='experience__details-icon'/>
               <div>
+              <h4>React.js</h4>
+              <small className='text-light'>Intermediate</small>
+              </div>
+            </article>
+
+            <article className='experience__details'>
+              < BsPatchCheckFill className='experience__details-icon'/>
+              <div>
               <h4>HTML</h4>
               <small className='text-light'>Experienced</small>
               </div>
@@ -64,6 +72,22 @@ const Experience = () => {
             <article className='experience__details'>
               < BsPatchCheckFill className='experience__details-icon'/>
               <div>
+              <h4>Django</h4>
+              <small className='text-light'>Intermediate</small>
+              </div>
+            </article>
+
+            <article className='experience__details'>
+              < BsPatchCheckFill className='experience__details-icon'/>
+              <div>
+              <h4>Docker</h4>
+              <small className='text-light'>Intermediate</small>
+              </div>
+            </article>
+
+            <article className='experience__details'>
+              < BsPatchCheckFill className='experience__details-icon'/>
+              <div>
               <h4>MongoDB</h4>
               <small className='text-light'>Experienced</small>
               </div>
@@ -72,7 +96,7 @@ const Experience = () => {
             <article className='experience__details'>
               < BsPatchCheckFill className='experience__details-icon'/>
               <div>
-              <h4>Django</h4>
+              <h4>Flask</h4>
               <small className='text-light'>Experienced</small>
               </div>
             </article>
