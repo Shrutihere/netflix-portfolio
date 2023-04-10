@@ -18,21 +18,21 @@ const data = [
     image: IMG2,
     title: "Book Suggester",
     github: "https://github.com/Shrutihere/Book-Suggester",
-    demo: "https://dribble.com/Alien_pixels"
+    demo: "https://github.com/Shrutihere/Book-Suggester"
   },
   {
     id: 3,
     image: IMG3,
     title: "Typing Speed Test",
     github: "https://github.com/Shrutihere/Typing-Speed-Test",
-    demo: "https://dribble.com/Alien_pixels"
+    demo: "https://github.com/Shrutihere/Typing-Speed-Test"
   },
   {
     id: 4,
     image: IMG4,
     title: "Movie Recommender System",
     github: "https://github.com/Shrutihere/Movie-Recommender-system",
-    demo: "https://dribble.com/Alien_pixels"
+    demo: "https://shrutihere.github.io/Movie-database/"
   },
 
 ]
