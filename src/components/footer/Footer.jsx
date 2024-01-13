@@ -6,7 +6,7 @@ import './footer.css'
 const Footer = () => {
   return (
     <footer>
-      <a href="#" className='footer__logo'>SHRUTICODES</a>
+      <a href="#" className='footer__logo'>SHAKSHIERA</a>
 
       <ul className='permalinks'>
         <li><a href="#">Home</a></li>
@@ -17,12 +17,12 @@ const Footer = () => {
       </ul>
 
       <div className='footer__socials'>
-        <a href="https://instagram.com/im.shruti"><BsInstagram/></a>
+        <a href="https://instagram.com/sakshi_shakshiki"><BsInstagram/></a>
         <a href="https://twitter.com"><BsTwitter/></a>
       </div>
 
       <div className="footer__copyright">
-        <small>&copy; SHRUTICODES. All rights reserved.</small>
+        <small>&copy; SHAKSHIERA. All rights reserved.</small>
       </div>
     </footer>
   )

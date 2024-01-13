@@ -1,38 +1,41 @@
 import React from 'react'
-import IMG1 from '../../assets/img1.jpg'
-import IMG2 from '../../assets/img2.jpg'
-import IMG3 from '../../assets/img3.jpg'
-import IMG4 from '../../assets/img4.jpg'
+import IMG1 from '../../assets/p1.png'
+import IMG2 from '../../assets/p2.jpg'
+import IMG3 from '../../assets/p3.jpg'
+import IMG4 from '../../assets/p4.jpg'
+import IMG5 from '../../assets/p5.png'
 import './portfolio.css'
 
 const data = [
   {
     id: 1,
     image: IMG1,
-    title: "Personal Portfolio",
-    github: "https://github.com/Shrutihere/personal-portfolio-vercel",
-    demo: "https://personal-portfolio-vercel.vercel.app/"
+    title: "Interview with Dr Sudha Acharya",
+    demo: "https://www.youtube.com/watch?v=Q-NHC2SRiyM"
   },
   {
     id: 2,
     image: IMG2,
-    title: "Book Suggester",
-    github: "https://github.com/Shrutihere/Book-Suggester",
-    demo: "https://github.com/Shrutihere/Book-Suggester"
+    title: "Video Review for 7th Heaven",
+    demo: "https://www.instagram.com/reel/CjKV1AhgVxu/?igshid=NjcyZGVjMzk%3D"
   },
   {
     id: 3,
     image: IMG3,
-    title: "Typing Speed Test",
-    github: "https://github.com/Shrutihere/Typing-Speed-Test",
-    demo: "https://github.com/Shrutihere/Typing-Speed-Test"
+    title: "Field Reporting",
+    demo: "https://www.instagram.com/reel/ClI7IbCAKob/?igshid=OGQ2MjdiOTE%3D"
   },
   {
     id: 4,
     image: IMG4,
-    title: "Movie Recommender System",
-    github: "https://github.com/Shrutihere/Movie-Recommender-system",
-    demo: "https://shrutihere.github.io/Movie-database/"
+    title: "Event Posts for JBG",
+    demo: "https://www.behance.net/gallery/128337727/sports-event-post"
+  },
+  {
+    id: 5,
+    image: IMG5,
+    title: "Interview with Kalamjeet Sehrawat",
+    demo: "https://www.youtube.com/watch?v=EPAWq4Y_uhc"
   },
 
 ]
@@ -46,16 +49,15 @@ const Portfolio = () => {
       <div className="container portfolio__container">
         
         {
-          data.map(({id, image, title, github, demo}) => {
+          data.map(({id, image, title, demo}) => {
             return (
-              <article key={id} className='portfolio__item'>
+              <article key={id} className='portfolio__item zoom'>
                 <div className='portfolio__item-image'>
                   <img src={image} alt={title} />
                 </div>
                 <h3>{title}</h3>
                 <div className="portfolio__item-cta">
-                <a href={github} className='btn' >Github</a>
-                <a href={demo} className='btn btn-primary' target='_blank'>Live Demo</a>
+                <a href={demo} className='btn btn-primary' target='_blank'>Watch now</a>
                 </div>
               </article>
             )

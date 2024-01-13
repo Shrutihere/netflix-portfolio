@@ -1,14 +1,13 @@
 .portfolio__container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 2.5rem;
+    gap: 3rem;
 }
 
 .portfolio__item {
-    background: var(--color-bg-variant);
-    padding: 1.3rem;
-    border-radius: 2rem;
-    border: 1px solid transparent;
+    padding: 1rem;
+    border-radius: 1rem;
+    border: 1.5px solid transparent;
     transition: var(--transition);
 }
 
@@ -18,7 +17,6 @@
 }
 
 .portfolio__item-image {
-    border-radius: 1.5rem;
     overflow: hidden;
 }
 
@@ -30,6 +28,17 @@
     display: flex;
     gap: 1rem;
     margin-bottom: 1rem;
+}
+.portfolio__item-cta > .btn {
+    width: 100%;
+}
+
+.zoom {
+    background: var(--color-bg-variant);
+}
+
+.zoom:hover {
+    transform: scale(1.2);
 }
 
 /* =============MEDIA QUERIES (MEDIUM DEVICES)============= */
