@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import './experience.css'
 import Carousel from 'react-bootstrap/Carousel';
 import 'bootstrap/dist/css/bootstrap.css'; 
@@ -7,6 +7,17 @@ import IMG2 from '../../assets/IMG2.jpg'
 import IMG3 from '../../assets/IMG3.png'
 
 const Experience = () => {
+
+  const [controlsAreVisible, setControlsAreVisible] = useState(true);
+
+  useEffect(()=>{
+
+    // iPhone X width, for example
+    if (window.innerWidth <= 600) {
+      setControlsAreVisible(false)
+    }
+  }, [])
+
   return (
     <section id="experience">
       <h5>What Skills I Have</h5>
@@ -14,7 +25,7 @@ const Experience = () => {
 
       {/* <div className="container experience__container" style={{ display: 'block', width: 1200, padding: 30 }}>  */}
       <div className="container experience__container" > 
-      <Carousel className='my_carousel'> 
+      <Carousel className='my_carousel' controls={controlsAreVisible}> 
         <Carousel.Item interval={1500}> 
         <div className="experience__slide">
           <div className="experience_image">
