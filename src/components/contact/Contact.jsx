@@ -22,23 +22,7 @@ const Contact = () => {
       <h2>Contact Me</h2>
 
       <div className="container contact__container">
-        <div className="contact__options">
-
-          <article className="contact__option">
-            <MdOutlineEmail className='contact__option-icon'/>
-            <h4>Email</h4>
-            <h5>jainshruti2605@gmail.com</h5>
-            <a href="mailto:jainshruti2605@gmail.com">Send a message</a>
-          </article>
-
-          <article className="contact__option">
-            <BsWhatsapp className='contact__option-icon'/>
-            <h4>WhatsApp</h4>
-            <h5>+91 9330353969</h5>
-            <a href="https://api.whatsapp.com/send?phone+919330353969">Send a message</a>
-          </article>
-
-        </div>
+        
 
         <form ref={form} onSubmit={sendEmail}>
           <input type="text" name='name' placeholder='Your Full Name' required />
@@ -46,6 +30,27 @@ const Contact = () => {
           <textarea name="message"  rows="7" placeholder='Your Message' required></textarea>
           <button type='submit' className='btn btn-primary'>Send Message</button>
         </form>
+
+
+        <div className="contact__options">
+
+          <article className="contact__option">
+            <MdOutlineEmail className='contact__option-icon'/>
+            <h4>Email</h4>
+            <h5>shakshi.vf@gmail.com</h5>
+            <a href="mailto:shakshi.vf@gmail.com">Send a message</a>
+          </article>
+
+          <article className="contact__option">
+            <BsWhatsapp className='contact__option-icon'/>
+            <h4>WhatsApp</h4>
+            <h5>+91 9007850539</h5>
+            <a href="https://api.whatsapp.com/send?phone+919007850539">Send a message</a>
+          </article>
+
+        </div>
+
+        
       </div>
     </section>
   )

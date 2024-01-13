@@ -1,7 +1,7 @@
 .container.contact__container {
     width: 58%;
     display: grid;
-    grid-template-columns: 30% 58%;
+    grid-template-columns: 50% 38%;
     gap: 12%;
 }
 
@@ -14,7 +14,7 @@
 .contact__option {
     background: var(--color-bg-variant);
     padding: 1.2rem;
-    border-radius: 1.2rem;
+    border-radius: 0.5rem;
     text-align: center;
     border: 1px solid transparent;
     transition: var(--transition);
@@ -42,16 +42,18 @@ form {
     display: flex;
     flex-direction: column;
     gap: 1.2rem;
+    color: var(--color-white);
 }
 
 input, textarea {
     width: 100%;
     padding: 1.5rem;
-    border-radius: 0.5rem;
-    background: transparent;
-    border: 2px solid var(--color-primary-variant);
+    border-radius: 0.2rem;
+    background: var(--color-bg-variant);
+    /* border: 2px solid var(--color-primary-variant); */
     resize: none;
     color: var(--color-white);
+    
 }
 
 

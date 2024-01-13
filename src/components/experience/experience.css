@@ -1,44 +1,88 @@
-.experience__container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
-}
 
-.experience__container > div {
-    background: var(--color-bg-variant);
-    padding: 2.4rem 5rem;
-    border-radius: 2rem;
-    border: 1px solid transparent;
-    transition: var(--transition);
-}
-
-.experience__container > div:hover {
-    background: transparent;
-    border-color: var(--color-primary-variant);
-    cursor: default;
-}
-
-.experience__container > div h3 {
-    text-align: center;
-    margin-bottom: 2rem;
-    color: var(--color-primary);
+.experience__slide{
+  text-align: center;
 }
 
 .experience__content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    row-gap: 2rem;
+  padding: 50px;
 }
-
-.experience__details {
-    display: flex;
-    gap: 1rem;
+.experience_image {
+  width: 80%;
+  padding : 20px;
+  margin-left: 100px;
+  border-style: solid;
 }
-
-.experience__details-icon {
-    margin-top: 6px;
-    color: var(--color-primary);
+.experience_image > img {
+  border-radius: 4%;
 }
+/* Slideshow container */
+.slideshow-container {
+    position: relative;
+    background: #f1f1f1f1;
+    
+  }
+  
+  /* Slides */
+  .mySlides {
+    display: none;
+    padding: 100px;
+    text-align: center;
+    
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -30px;
+    padding: 16px;
+    color: #888;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    position: absolute;
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+    color: white;
+  }
+  
+  /* The dot/bullet/indicator container */
+  .dot-container {
+    text-align: center;
+    padding: 20px;
+    background: #ddd;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  
+  /* Add an italic font style to all quotes */
+  q {font-style: italic;}
+  
+  /* Add a blue color to the author */
+  .author {color: cornflowerblue;}
 
 
 /* =============MEDIA QUERIES (MEDIUM DEVICES)============= */
@@ -56,6 +100,11 @@
     .experience__content {
         padding: 1rem;
     }
+
+    .dot-container, .next{
+      display: none;
+    }
+
 }
 
 /* =============MEDIA QUERIES (SMALL DEVICES)============= */
@@ -65,9 +114,14 @@
     }
 
     .experience__container > div {
-        width: 100%;
+        width: 40%;
         padding: 2rem 1rem;
+        margin: 0;
     } 
+
+    .experience_image > img {
+      margin-left: -4rem;
+    }
 
 }
 
