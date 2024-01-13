@@ -1,5 +1,4 @@
 import React from 'react'
-import { BsPatchCheckFill } from 'react-icons/bs'
 import './experience.css'
 import Carousel from 'react-bootstrap/Carousel';
 import 'bootstrap/dist/css/bootstrap.css'; 
@@ -13,12 +12,13 @@ const Experience = () => {
       <h5>What Skills I Have</h5>
       <h2>My Experience</h2>
 
-      <div className="container experience__container" style={{ display: 'block', width: 1200, padding: 30 }}> 
-      <Carousel> 
+      {/* <div className="container experience__container" style={{ display: 'block', width: 1200, padding: 30 }}>  */}
+      <div className="container experience__container" > 
+      <Carousel className='my_carousel'> 
         <Carousel.Item interval={1500}> 
         <div className="experience__slide">
           <div className="experience_image">
-            <img  src={IMG1}/>
+            <img  src={IMG1} alt='' />
           </div>
           
           <div className="experience__content">
@@ -38,7 +38,7 @@ const Experience = () => {
         <Carousel.Item interval={1500}> 
         <div className="experience__slide">
         <div className="experience_image">
-            <img  src={IMG2}/>
+            <img  src={IMG2} alt='' />
           </div>
 
           <div className="experience__content">
@@ -58,7 +58,7 @@ const Experience = () => {
         <Carousel.Item interval={1500}> 
         <div className="experience__slide">
         <div className="experience_image">
-            <img  src={IMG3}/>
+            <img  src={IMG3} alt='' />
           </div>
           
           <div className="experience__content">
@@ -78,111 +78,6 @@ const Experience = () => {
       </Carousel> 
     </div> 
 
-      {/* <div className="container experience__container">
-        <div className="experience__frontend">
-          <h3>Frontend Development</h3>
-          <div className="experience__content">
-
-            <article className='experience__details'>
-              < BsPatchCheckFill className='experience__details-icon'/>
-              <div>
-              <h4>React.js</h4>
-              <small className='text-light'>Intermediate</small>
-              </div>
-            </article>
-
-            <article className='experience__details'>
-              < BsPatchCheckFill className='experience__details-icon'/>
-              <div>
-              <h4>HTML</h4>
-              <small className='text-light'>Experienced</small>
-              </div>
-            </article>
-
-            <article className='experience__details'>
-              < BsPatchCheckFill className='experience__details-icon'/>
-              <div>
-              <h4>CSS</h4>
-              <small className='text-light'>Experienced</small>
-              </div>
-            </article>
-
-            <article className='experience__details'>
-              < BsPatchCheckFill className='experience__details-icon'/>
-              <div>
-              <h4>JavaScript</h4>
-              <small className='text-light'>Experienced</small>
-              </div>
-            </article>
-
-            <article className='experience__details'>
-              < BsPatchCheckFill className='experience__details-icon'/>
-              <div><h4>Bootstrap</h4>
-              <small className='text-light'>Intermediate</small>
-              </div>
-            </article>
-
-          </div>
-
-        </div>
-        
-        <div className="experience__backend">
-          <h3>Backend Development</h3>
-
-          <div className="experience__content">
-
-            <article className='experience__details'>
-              < BsPatchCheckFill className='experience__details-icon'/>
-              <div>
-              <h4>FastAPI</h4>
-              <small className='text-light'>Experienced</small>
-              </div>
-            </article>
-
-            <article className='experience__details'>
-              < BsPatchCheckFill className='experience__details-icon'/>
-              <div>
-              <h4>Django</h4>
-              <small className='text-light'>Intermediate</small>
-              </div>
-            </article>
-
-            <article className='experience__details'>
-              < BsPatchCheckFill className='experience__details-icon'/>
-              <div>
-              <h4>Docker</h4>
-              <small className='text-light'>Intermediate</small>
-              </div>
-            </article>
-
-            <article className='experience__details'>
-              < BsPatchCheckFill className='experience__details-icon'/>
-              <div>
-              <h4>MongoDB</h4>
-              <small className='text-light'>Experienced</small>
-              </div>
-            </article>
-
-            <article className='experience__details'>
-              < BsPatchCheckFill className='experience__details-icon'/>
-              <div>
-              <h4>Flask</h4>
-              <small className='text-light'>Experienced</small>
-              </div>
-            </article>
-
-            <article className='experience__details'>
-              < BsPatchCheckFill className='experience__details-icon' />
-              <div>
-              <h4>Python</h4>
-              <small className='text-light'>Intermediate</small>
-              </div>
-            </article>
-
-            </div>
-
-        </div>
-      </div> */}
     </section>
   )
 }

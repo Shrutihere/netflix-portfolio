@@ -120,6 +120,7 @@ h1 {
 @media screen and (max-width: 600px) {
     header {
         height: 100vh;
+        padding: 0;
     }
 
     .header__socials,
@@ -130,7 +131,7 @@ h1 {
     .header {
         grid-template-columns: 80%;
         /* gap: 10%; */
-        margin-right: -10rem;
+        margin-right: -4rem;
     }
 
     .header__container{
@@ -142,10 +143,14 @@ h1 {
     }
 
     .me {
-        width: 12rem;
+        width: 14rem;
         height: 16rem;
-        margin-left: 5rem;
+        margin-left: 2rem;
         margin-top: 0;
+    }
+
+    .top {
+        display: none;
     }
 
 }
